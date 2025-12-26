@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+<h1>Submit Feedback</h1>
+<form id="feedbackForm">
+    <label for="name">Name</label><br>
+    <input id="name" name="name" type="text"placeholder="Your name"><br><br>
+
+    <label for="email">Email</label><br>
+    <input id="email" name="email" type="email"  placeholder="enter your email id"><br><br>
+
+    <label for="course">Course</label><br>
+    <input id="course" name="course" type="text" placeholder="Course name"><br><br>
+
+    <label>Gender:</label><br>
+<input type="radio" id="male" name="gender" value="Male">
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label><br><br>
+
+    <label for="rating">Rating</label><br>
+    <select id="rating" name="rating" required>
+        <option value="5"Select a rating></option>
+        <option>Very poor</option>
+        <option>Poor</option>
+        <option>Ok-ok</option>
+        <option>Good</option>
+        <option>Excellent</option>
+    </select><br><br>
+
+    <label for="Feedback">Feedback</label><br>
+    <textarea id="Feedback" name="Feedback" placeholder="Enter your feedback"></textarea><br>
+
+    <label id="checkbox">
+        <input type="checkbox" name="consent" required>
+        I consent to my feedback being processed.
+    </label><br><br>
+
+    <button type="submit">Submit Feedback</button>
+</form>
+
+<nav>
+    <button><a href="index.html">Back to Homepage</a></button>
+</nav>
+
+</body>
+</html>
